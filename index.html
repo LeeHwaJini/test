@@ -1,12 +1,627 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hwajin</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
   </head>
+
   <body>
-    <h1>test</h1>
-    <p>페이지 테스트</p>
+    <main>
+      <section class="section h-full banner-section">
+        <img src="./assets/images/banner.png" alt="banner" class="img-cover" />
+      </section>
+      <section class="section h-full scroll-text-section">
+        <div class="bg-area"></div>
+        <h1 class="text">Responsibility<span>책임감</span></h1>
+        <h1 class="text">Diligence<span>성실함</span></h1>
+        <h1 class="text">Sense<span>감각</span></h1>
+        <h1 class="text">Learning<span>배움</span></h1>
+        <h1 class="text">A constant challenge<span>끊임없는 도전</span></h1>
+      </section>
+
+      <section class="section h-full portfolio-section">
+        <ul class="portfolio-list">
+          <li data-splitting="01" class="item riman">
+            <div class="text-area">
+              <h2 class="title">리만코리아</h2>
+              <p class="sub-text">리만코리아 사이트 퍼블리싱</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>100%</dd>
+
+                <dt>DATE</dt>
+                <dd>2024-04 ~ 2024-12</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">VUE, QUASAR , SCSS</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="https://kr.riman.com/" target="_blank"
+                  ><i class="ico link"></i
+                ></a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="02" class="item medical-center">
+            <div class="text-area">
+              <h2 class="title">이화의료원</h2>
+              <p class="sub-text">이화의료원 APP 퍼블리싱</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>APP</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>50%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-01 ~ 2023-0</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">ReactNative , CSS, Javascript</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="03" class="item dari">
+            <div class="text-area">
+              <h2 class="title">DARI</h2>
+              <p class="sub-text">마케팅 통합 툴 DARI 퍼블리싱</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>90%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-08 ~ 2023-08</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">HTML , CSS, Jquery</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="https://kr.riman.com/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="04" class="item loftshop">
+            <div class="text-area">
+              <h2 class="title">로프트샵</h2>
+              <p class="sub-text">로프트샵 사이트 리뉴얼</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>PC WEB, MO WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>100%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-10 ~ 2023-10</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="">고도몰</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="https://kr.riman.com/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="05" class="item eg">
+            <div class="text-area">
+              <h2 class="title">말레EG</h2>
+              <p class="sub-text">말레이시아 영어캠프 모집 사이트</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>디자인 및 퍼블리싱 100%, 프론트엔드 95%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-10 ~ 2023-10</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">HTML , CSS, Javascript</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="https://kr.riman.com/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="06" class="item topper">
+            <div class="text-area">
+              <h2 class="title">Wonny Topper</h2>
+              <p class="sub-text">이벤트 공간 장식 업체 사이트</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>CONTRIBUTION</dt>
+                <dd>디자인 및 퍼블리싱 100%, 프론트엔드 95%</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-07 ~ 2023-09</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="poppins">HTML , CSS, Javascript</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="https://kr.riman.com/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-splitting="07" class="item inus">
+            <div class="text-area">
+              <h2 class="title">이누스 프렌즈몰</h2>
+              <p class="sub-text">이누스프렌즈몰 UX/UI 개선 작업 운영</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>PC WEB, MO WEB</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-07 ~ 2024-02</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="">카페24</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="https://kr.riman.com/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li data-splitting="08" class="item inus">
+            <div class="text-area">
+              <h2 class="title">Better&</h2>
+              <p class="sub-text">Better& UX/UI 개선 작업 운영</p>
+
+              <dl class="detail-text">
+                <dt>TYPE</dt>
+                <dd>반응형 WEB</dd>
+
+                <dt>DATE</dt>
+                <dd>2023-12 ~ 2024-03</dd>
+
+                <dt>TECHNOLOGY</dt>
+                <dd class="">워드프레스</dd>
+              </dl>
+
+              <div class="icon-area">
+                <i class="ico github"></i>
+                <a href="https://kr.riman.com/" target="_blank">
+                  <i class="ico link"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section skill-section">
+        <div class="center">
+          <div id="cardItemArea" class="items">
+            <div class="item">
+              <div class="card type01">
+                <dl class="text-list">
+                  <dt>HTML</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type03">
+                <dl class="text-list">
+                  <dt>CSS</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type04">
+                <dl class="text-list">
+                  <dt>SCSS</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type07">
+                <dl class="text-list">
+                  <dt>Vue</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type01">
+                <dl class="text-list">
+                  <dt>ReactNative</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type05">
+                <dl class="text-list">
+                  <dt>Javascript</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type06">
+                <dl class="text-list">
+                  <dt>Jquery</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type02">
+                <dl class="text-list">
+                  <dt>Figma</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type07">
+                <dl class="text-list">
+                  <dt>INTERACTION</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type02">
+                <dl class="text-list">
+                  <dt>Figma</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type08">
+                <dl class="text-list">
+                  <dt>Zeplin</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type09">
+                <dl class="text-list">
+                  <dt>Photoshop</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type10">
+                <dl class="text-list">
+                  <dt>Illustrator</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card type05">
+                <dl class="text-list">
+                  <dt>Platform</dt>
+                  <dd>
+                    Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // text 채워지는 모션
+      const textElements = gsap.utils.toArray(".scroll-text-section .text");
+      textElements.forEach((text) => {
+        gsap.to(text, {
+          backgroundSize: "100%",
+          ease: "none",
+          scrollTrigger: {
+            trigger: text,
+            start: "center 80%",
+            end: "center 20%",
+            scrub: true,
+          },
+        });
+      });
+    });
+
+    const images = gsap.utils.toArray(".skill-section .item");
+    const imageSize = images.length;
+    const total = images.length;
+    const degree = 360 / total;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const init = () => {
+      const timeline = gsap.timeline();
+
+      images.forEach((image, index) => {
+        const sign = Math.floor((index / 2) % 2) ? 1 : -1; // 짝수/홀수에 따라 방향 설정
+        const value = Math.floor((index + 4) / 4) * 4; // 회전 값 계산
+        const rotation = index > imageSize - 3 ? 0 : sign * value;
+        console.log(rotation);
+
+        gsap.set(image, {
+          rotation: rotation,
+          scale: 0.5,
+        });
+
+        timeline.from(
+          image,
+          {
+            x: () =>
+              index % 2
+                ? window.innerWidth + image.clientWidth * 4
+                : -window.innerWidth - image.clientWidth * 4,
+            y: () => window.innerHeight - image.clientHeight,
+            rotation: index % 2 ? 200 : -200,
+            scale: 4,
+            opacity: 1,
+            ease: "power4.out",
+            duration: 1,
+            delay: 0.15 * Math.floor(index / 2),
+          },
+          0
+        );
+
+        let rotationAngle = index * degree;
+        timeline.to(
+          image,
+          {
+            scale: 1,
+            duration: 0,
+          },
+          0.15 * (imageSize / 2 - 1) + 1
+        );
+
+        timeline.to(
+          image,
+          {
+            transformOrigin: "center 150vh",
+            rotation:
+              index > imageSize / 2
+                ? -degree * (imageSize - index)
+                : rotationAngle,
+            duration: 1,
+            ease: "power1.out",
+          },
+          0.15 * (imageSize / 2 - 1) + 1
+        );
+      });
+    };
+
+    const draggable = () => {
+      let start = 0;
+      Draggable.create(".skill-section .items", {
+        type: "rotation",
+
+        onDragStart: function () {
+          start = this.rotation;
+        },
+        onDragEnd: function () {
+          const rotation = this.rotation;
+          const offset = Math.abs(rotation - start);
+          if (rotation > start) {
+            if (rotation - start < degree / 2) {
+              gsap.to(".skill-section .items", {
+                rotation: `-=${offset}`,
+              });
+            } else {
+              gsap.to(".skill-section .items", {
+                rotation: `+=${2 * degree - offset}`,
+              });
+            }
+          } else {
+            if (Math.abs(rotation - start) < degree / 2) {
+              gsap.to(".skill-section .items", {
+                rotation: `+=${offset}`,
+              });
+            } else {
+              gsap.to(".skill-section .items", {
+                rotation: `-=${2 * degree - offset}`,
+              });
+            }
+          }
+        },
+      });
+    };
+
+    const items = document.querySelectorAll(".portfolio-list li");
+    const numItems = items.length;
+
+    ScrollTrigger.create({
+      trigger: ".skill-section",
+      start: `top+=${numItems * 800} top`, // 섹션의 상단이 뷰포트의 상단에 도달할 때
+      onEnter: init, // 섹션이 화면에 들어올 때 init 함수 호출
+      once: true, // 한 번만 실행
+    });
+
+    draggable();
+
+    let timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".portfolio-section",
+        pin: true,
+        pinSpacing: true,
+        start: "top top",
+        end: `+=${numItems * 800}`,
+        scrub: 1,
+      },
+    });
+
+    items.forEach((item, index) => {
+      if (index === 0) {
+        timeline.to(item, {
+          x: 0,
+          duration: 1,
+          ease: "none",
+        });
+      } else {
+        timeline.to(item, {
+          x: `-${window.innerWidth - 16}px`, // 화면 너비만큼 이동
+          duration: 1,
+          ease: "none",
+        });
+      }
+    });
+
+    const skillData = [
+      {
+        title: "HTML",
+        description:
+          "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
+        type: "type01",
+      },
+      {
+        title: "CSS",
+        description:
+          "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
+        type: "type03",
+      },
+      {
+        title: "SCSS",
+        description:
+          "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
+        type: "type04",
+      },
+      {
+        title: "Javascript",
+        description:
+          "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
+        type: "type05",
+      },
+      {
+        title: "Jquery",
+        description:
+          "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
+        type: "type06",
+      },
+      {
+        title: "Vue",
+        description:
+          "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
+        type: "type07",
+      },
+      {
+        title: "Figma",
+        description:
+          "Semantic Tag를 이용해서 HTMl로 레이아웃 구성 할 수 있습니다",
+        type: "type02",
+      },
+    ];
+
+    // const cardItemArea = document.querySelector("#cardItemArea");
+
+    // skillData.forEach((item) => {
+    //   cardItemArea.innerHTML += `
+    //   <div class="item">
+    //           <div class="card ${item.type}">
+    //             <dl class="text-list">
+    //               <dt>${item.title}</dt>
+    //               <dd>
+    //                 ${item.description}
+    //               </dd>
+    //             </dl>
+    //           </div>
+    //         </div>
+    //   `;
+    // });
+  </script>
 </html>
