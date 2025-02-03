@@ -411,25 +411,25 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 .portfolio-section .portfolio-list li.riman {
-  background: url("../images/portfoilo_riman.png") no-repeat center center/cover;
+  background: url("../images/portfoilo/portfoilo_riman.png") no-repeat center center/cover;
 }
 .portfolio-section .portfolio-list li.medical-center {
-  background: url("../images/portfoilo_medical_center.png") no-repeat center center/cover;
+  background: url("../images/portfoilo/portfoilo_medical_center.png") no-repeat center center/cover;
 }
 .portfolio-section .portfolio-list li.dari {
-  background: url("../images/portfoilo_dari.png") no-repeat center center/cover;
+  background: url("../images/portfoilo/portfoilo_dari.png") no-repeat center center/cover;
 }
 .portfolio-section .portfolio-list li.loftshop {
-  background: url("../images/portfoilo_loftshop.png") no-repeat center center/cover;
+  background: url("../images/portfoilo/portfoilo_loftshop.png") no-repeat center center/cover;
 }
 .portfolio-section .portfolio-list li.eg {
-  background: url("../images/portfolio_eg.png") no-repeat center center/cover;
+  background: url("../images/portfoilo/portfolio_eg.png") no-repeat center center/cover;
 }
 .portfolio-section .portfolio-list li.topper {
-  background: url("../images/portfoilo_topper.png") no-repeat center center/cover;
+  background: url("../images/portfoilo/portfoilo_topper.png") no-repeat center center/cover;
 }
 .portfolio-section .portfolio-list li.inus {
-  background: url("../images/portfoilo_inus.png") no-repeat center center/cover;
+  background: url("../images/portfoilo/portfoilo_inus.png") no-repeat center center/cover;
 }
 .portfolio-section .portfolio-list li .text-area {
   position: relative;
